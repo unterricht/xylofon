@@ -1,3 +1,5 @@
+<base href="/xylofon/">
+
 # xylofon
 Ein Xylofon zum Üben
 
