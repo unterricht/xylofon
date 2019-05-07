@@ -1,5 +1,6 @@
 # xylofon
 Ein Xylofon zum Üben
 
-<p><a href="/xylofon/Xylofon.html">diatonisches Xylofon</a></p>
-<p><a href="/xylofon/Xylofon12.html">chromatisches Xylofon</a></p>
+| [diatonisches Xylofon](/xylofon/Xylofon.html "ohne Halbtöne") | [chromatisches Xylofon](/xylofon/Xylofon.html "mit Halbtönen") |
+| ------ | ------ |
+| ![diatonisches Xylofon](Vorschau-Xylofon.png "diatonisches Xylofon") | ![chromatisches Xylofon](Vorschau-Xylofon12.png "chromatisches Xylofon") |
