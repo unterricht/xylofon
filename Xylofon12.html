@@ -1,0 +1,207 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Xylofon - Maus 12</title>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            body .container {
+                width: 550px;
+                height: 400px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }
+            body .container .note {
+                width: 44px;
+                height: 340px;
+                background: tomato;
+                cursor: pointer;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                user-select: none;
+                z-index: 10;
+                position: relative;
+            }
+            body .container .note.up {
+                margin-left: -55px;
+                transform: translatex(50%);
+                z-index: 100;
+                border: 2px solid rgba(255,255,255,.75);
+            }
+            body .container .note.right {
+                left: 0;
+            }
+            body .container .note:nth-child(1) {
+                background: #e41544;
+            }
+            body .container .note:nth-child(2) { 
+                background: #f2511b;
+                height: 150px;
+                top: -110px;
+            }
+            body .container .note:nth-child(3) {
+                background: #f79210;
+                height: 320px;
+            }
+            body .container .note:nth-child(4) {
+                background: #fcc81d;
+                height: 140px;
+                top: -105px;
+            }
+            body .container .note:nth-child(5) {
+                background: #fff419;
+                height: 300px;
+            }
+            body .container .note:nth-child(6) {
+                background: #cce63f;
+                height: 290px;
+            }
+            body .container .note:nth-child(7) {
+                background: #59c134;
+                height: 130px;
+                top: -100px;
+            }
+            body .container .note:nth-child(8) {
+                background: #009c97;
+                height: 270px;
+            }
+            body .container .note:nth-child(9) {
+                background: #176fc1;
+                height: 120px;
+                top: -95px;
+            }
+            body .container .note:nth-child(10) {
+                background: #5744a4;
+                height: 250px;
+            }
+            body .container .note:nth-child(11) {
+                background: #8a48a9;
+                height: 110px;
+                top: -90px;
+            }
+            body .container .note:nth-child(12) {
+                background: #d11f98;
+                height: 230px;
+            }
+            body .container .note:nth-child(13) {
+                background: #e41544;
+                height: 220px;
+            }
+            body .container .note:nth-child(14) {
+                background: #f2511b;
+                height: 100px;
+                top: -85px;
+            }
+            body .container .note:nth-child(15) {
+                background: #f79210;
+                height: 200px;
+            }
+            body .container .note:nth-child(16) {
+                background: #fcc81d;
+                height: 90px;
+                top: -80px;
+            }
+            body .container .note:nth-child(17) {
+                background: #fff419;
+                height: 180px;
+            }
+            body .container .note:nth-child(18) {
+                background: #cce63f;
+                height: 170px;
+            }
+            body .container .note:nth-child(19) {
+                background: #59c134;
+                height: 80px;
+                top: -75px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="note" id="0">C</div>
+        <div class="note up" id="1">C#</div>
+        <div class="note" id="2">D</div>
+        <div class="note up" id="3">D#</div>
+        <div class="note" id="4">E</div>
+        <div class="note" id="5">F</div>
+        <div class="note up" id="6">F#</div>
+        <div class="note" id="7">G</div>
+        <div class="note up" id="8">G#</div>
+        <div class="note" id="9">A</div>
+        <div class="note up" id="10">A#</div>
+        <div class="note" id="11">B</div>  
+        <div class="note" id="12">C</div>
+        <div class="note up" id="13">C#</div>
+        <div class="note" id="14">D</div>
+        <div class="note up" id="15">D#</div>
+        <div class="note" id="16">E</div>
+        <div class="note" id="17">F</div>
+        <div class="note up" id="18">F#</div>
+    </div> 
+    
+    <div class="audio">
+        <audio src="gl_c1.mp3" class="sound"></audio>
+        <audio src="gl_cis1.mp3" class="sound"></audio>
+        <audio src="gl_d1.mp3" class="sound"></audio>
+        <audio src="gl_dis1.mp3" class="sound"></audio>
+        <audio src="gl_e1.mp3" class="sound"></audio>
+        <audio src="gl_f1.mp3" class="sound"></audio>
+        <audio src="gl_fis1.mp3" class="sound"></audio>
+        <audio src="gl_g1.mp3" class="sound"></audio>
+        <audio src="gl_gis1.mp3" class="sound"></audio>
+        <audio src="gl_a1.mp3" class="sound"></audio>
+        <audio src="gl_ais1.mp3" class="sound"></audio>
+        <audio src="gl_h1.mp3" class="sound"></audio>
+        <audio src="gl_c2.mp3" class="sound"></audio>
+        <audio src="gl_cis2.mp3" class="sound"></audio>
+        <audio src="gl_d2.mp3" class="sound"></audio>
+        <audio src="gl_dis2.mp3" class="sound"></audio>
+        <audio src="gl_e2.mp3" class="sound"></audio>
+        <audio src="gl_f2.mp3" class="sound"></audio>
+        <audio src="gl_fis2.mp3" class="sound"></audio>
+    </div> 
+    
+    </body>
+
+    <script>
+        (function(){
+            var cont=true;
+            var note=$('.sound');
+            
+            
+            $('.note').click(function(){
+                let num=parseInt(this.id);
+                playOn(num);
+            });
+            
+            var playOn=function(num){
+                note[num].pause();
+                note[num].currentTime=0;
+                note[num].play();
+                effectHover(num);
+            }
+            
+            var effectHover=function(num){
+                $('#'+num).css("box-shadow","0px 0px 10px black");
+                setTimeout(function(){
+                $('#'+num).css("box-shadow","none");
+                },200) 
+            }  
+            
+        }())
+    </script>
+    </html>
